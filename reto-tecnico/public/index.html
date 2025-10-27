@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reto Técnico - Lista de Personas</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lista de Personas</h1>
+
+      <form id="controls" autocomplete="off">
+        <label for="cantidad">Cantidad (1-10)</label>
+        <input id="cantidad" type="number" min="1" max="10" value="10" />
+        <button id="btn-generar" type="submit">Generar Personas</button>
+      </form>
+    </header>
+
+    <main>
+      <div id="grid" class="grid">Presiona el botón “Generar Personas.</div>
+    </main>
+
+    <template id="card-tpl">
+      <article class="card">
+        <img class="foto" alt="Fotigrafia" />
+        <div class="meta">
+          <p><b>Nombre:</b> <span class="nombre"></span></p>
+          <p><b>Género:</b> <span class="genero"></span></p>
+          <p><b>Ubicación:</b> <span class="ubicacion"></span></p>
+          <p><b>Correo:</b> <a class="correo"></a></p>
+          <p><b>Nacimiento:</b> <time class="nacimiento"></time></p>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "reto-tecnico",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API REST + FRONTEND  para listar personas desde RandomUser",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

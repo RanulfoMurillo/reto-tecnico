@@ -1,0 +1,23 @@
+# Reto Técnico – Lista de Personas (Full-stack mínimo)
+## Enfoque Técnico:
+Full-stack: back-end con Express (Node.js) + front-end SPAen HTML Y CSS
+Tengo experiencia en Desarrollo Web, HTML, CSS, SCSS, JS, Págians estáticas, formularios
+## Descripción
+- **Back-end (Express)**: `GET /api/people?results=N` (N=1..10) – consume RandomUser y devuelve los campos:
+    **Nombre, Género, Ubicación, Correo, Fecha de nacimiento, Fotografía**.
+- **Front-end**: página en `/public` con **un input** para N y **un botón** “Generar” que muestra las tarjetas.
+
+## Requisitos
+- Node.js 18+ (probado en Node 22.13.1).
+
+## Fuente de datos usada:
+- https://randomuser.me/documentation
+
+## Pasos para ejecutar el proyecto:
+```bash
+npm install
+npm start
+# Front-end:
+## Abrir http://localhost:3000/ 
+#Back-end
+# Probar API: http://localhost:3000/api/people?results=10
